@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Basic Web</title>
-    <link rel="icon" type="image/png" href="http://www.welcomia.com/uploads/png/preview/disco_ball_png_7372.png" />
+    <link rel="icon" type="image/png" href="https://www.pngpix.com/wp-content/uploads/2016/07/PNGPIX-COM-Disco-Ball-PNG-Transparent-Image.png"
+    />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
 
     <style>
         .gavinorange {
@@ -16,65 +19,137 @@
             border-color: pink;
             padding: 10px;
         }
-        
+
         .nav {
             overflow: hidden;
             padding: 0;
             margin: 10px;
             list-style: none;
         }
-        
+
         .navitem {
             float: left;
+            font-family: 'Josefin Sans', sans-serif;
         }
-        
+
         .navitem a {
             display: block;
             padding: 10px;
             color: pink;
             text-decoration: none;
         }
-        
+
         .readmore {
             color: pink;
             text-decoration: none;
             margin: 0;
+            font-family: 'Josefin Sans', sans-serif;
         }
-        
+
         .tourdates {
             color: pink;
             text-decoration: none;
+            font-family: 'Josefin Sans', sans-serif;
         }
-        
+
+        .media-body {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
         #jumbo1 {
             background-image: url(https://f4.bcbits.com/img/a1615441986_10.jpg);
             height: 700px;
+            background-size: cover;
         }
-        
+
         #jumbo2 {
-            background-image: url(http://consortpr.com/wp-content/uploads/2017/01/gavin-turek2.jpg);
-            height: 1100px;
+            background-image: url("gavwindow.jpg");
+            height: 500px;
             padding-left: 60px;
+            background-size: cover;
+            background-position: right;
+
+            font-family: 'Josefin Sans', sans-serif;
         }
-        
+
         .buynow {
             float: right;
             margin-top: 40px;
             margin-right: 40px;
+            font-family: 'Josefin Sans', sans-serif;
         }
-        
+
+        #albumout {
+            font-size: 16px;
+        }
+
         h5 {
             color: white;
         }
-        
+
         .media-object {
-            width: 200px;
+            /*width: 200px;*/
             margin-bottom: 70px;
         }
-        
+
         #carousel-example-generic {
             margin-bottom: 70px;
         }
+
+        #itunes {
+            color: pink;
+            text-decoration: none;
+            height: 600px;
+        }
+
+        #buytix {
+            color: fuchsia;
+            text-decoration: none;
+            margin: 0;
+        }
+
+       #itunes .itunescontainer {
+            display: flex;
+            flex-flow: row nowrap;
+            /* Align on the same line */
+            justify-content: space-between;
+            /* Equal margin between the child elements */
+        }
+        /* For Presentation, not needed */
+
+       #itunes .center {
+            /*background: #5F85DB;*/
+            padding: 5px;
+            /*color: #fff;*/
+            font-size: 10px;
+            width: 30%;
+            text-align: center;
+        }
+
+
+       #itunes .left {
+            /*background: red;*/
+            padding: 5px;
+            /*color: #fff;*/
+            font-size: 10px;
+            width: 30%;
+            text-align: center;
+        }
+
+        #itunes .right {
+            /*background: yellow;*/
+            padding: 5px;
+            /*color: #fff;*/
+            font-size: 10px;
+            width: 30%;
+            text-align: center;
+        }
+
+        #itunestitles {
+            color: pink;
+            padding-bottom: 5%;
+            
+            }
     </style>
 </head>
 
@@ -83,10 +158,12 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <ul class="nav">
-                <li class="navitem"><a href="http://www.gavinturek.com/">HOME</a></li>
-                <li class="navitem"><a href="http://www.gavinturek.com/good-look-for-you/">MUSIC</a></li>
-                <li class="navitem"><a href="http://www.gavinturek.com/tour/">TOUR</a></li>
-                <li class="navitem"><a href="http://www.gavinturek.com/shop/">SHOP</a></li>
+                <li class="navitem"><a href="https://www.gavinturek.com/">HOME</a></li>
+                <li class="navitem"><a href="#aboutg">ABOUT</a></li>
+                <li class="navitem"><a href="#jumbo2">TOUR</a></li>
+                <li class="navitem"><a href="#itunes">LISTEN</a></li>
+                <li class="navitem"><a href="mailto:someone@yoursite.com">CONTACT</a></li>
+
 
             </ul>
         </div>
@@ -95,9 +172,9 @@
 
     <div id="jumbo1" class="jumbotron">
         <div class="buynow">
-            <h5> NEW ALBUM OUT NOW </h5>
+            <h5 id="albumout"> NEW ALBUM OUT</h5>
             <p>
-                <a class="btn btn-default btn-lrg" href="https://en.wikipedia.org/wiki/Ice_cream" role="button">
+                <a class="btn btn-default btn-lrg" href="https://itunes.apple.com/us/album/frontline-single/id983413811" role="button">
 
                     <span class="glyphicon glyphicon-usd" aria-hidden="true"></span> CLICK TO BUY</a>
             </p>
@@ -106,13 +183,13 @@
 
 
 
-    <div class="container">
+    <div class="container" id="aboutg">
 
 
         <div class="media">
             <div class="media-left">
                 <a href="#">
-                    <img class="media-object" src="http://static.stereogum.com/uploads/2016/11/TigerTiger_Gavin_0058_square-1479325403-640x640.jpg"
+                    <img class="media-object" src="https://static.stereogum.com/uploads/2016/11/TigerTiger_Gavin_0058_square-1479325403-640x640.jpg"
                         alt="gavin-look-left">
                 </a>
             </div>
@@ -125,7 +202,11 @@
                 alongside her mother, who toured coffeeshops singing gospel. Her origin story goes like this: at age three,
                 a teeny tiny Gavin interrupted her mother mid performance, took over the mic and to the astonishment of the
                 audience, finished the song for her. She knew every single lyric, word for word, and whoa, that girl could
-                sing. Suffice to say, a star was born... <a class="readmore" href="http://www.gavinturek.com/contact/">READ MORE</a>.
+                sing. Suffice to say, a star was born.
+
+                <p>Growing up, Gavin obsessively studied two things: music (the likes of Donna Summer, Prince, Lauryn Hill,
+                    Diana Ross. Michael Jackson, Giorgio Moroder) and all forms of dance...
+                    <a class="readmore" href="https://www.gavinturek.com/contact/">READ MORE</a> </p>
 
             </div>
 
@@ -140,19 +221,19 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="http://buzzbands.la/wp-content/gallery/gavinturek-echo-ms/001.jpg" alt="gavin-mic-out">
+                        <img src="gavnoshoes.jpg" alt="gavin-mic-out">
                         <div class="carousel-caption">
                             <!-- Can put descriptive text here -->
                         </div>
                     </div>
                     <div class="item">
-                        <img src="http://buzzbands.la/wp-content/gallery/gavinturek-echo-ms/004.jpg" alt="gavin-dancers">
+                        <img src="gavhandout.jpg" alt="gavin-dancers">
                         <div class="carousel-caption">
                             ...
                         </div>
                     </div>
                     <div class="item">
-                        <img src="http://i0.wp.com/blurredculture.com/wp-content/uploads/2016/07/IMG_9013.jpeg" alt="gavin-singing">
+                        <img src="https://i0.wp.com/blurredculture.com/wp-content/uploads/2016/07/IMG_9013.jpeg" alt="gavin-singing">
                         <div class="carousel-caption">
                             ...
                         </div>
@@ -176,22 +257,228 @@
     <div id="jumbo2" class="jumbotron">
         <div class="tourdates">
             <h5> TOUR DATES </h5>
-                <ul>
-                    <li>Feb 25 - Ace Hotel (Palm Springs, CA)</li>
-                    <li>Feb 25 - Ace Hotel (Palm Springs, CA)</li>
-                    <li>Feb 25 - Ace Hotel (Palm Springs, CA)</li>
-                    <li>Feb 25 - Ace Hotel (Palm Springs, CA)</li>
-                    <li>Feb 25 - Ace Hotel (Palm Springs, CA)</li>
-                </ul>
+            <ul>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+                <li>Feb 25 - Ace Hotel (Palm Springs, CA) - <a hre="https://www.gavinturek.com/tour/"><span id="buytix"> BUY TIX</span></a></li>
+
+
+
+
+
+
+
+            </ul>
         </div>
     </div>
 
+    <div class="container" id="itunes">
+
+
+
+        <div class="itunescontainer">
+            <div class="left">
+                <h4 id="itunestitles">FIND NEW MUSIC...</h4>
+                <div class="row" id="search">
+                    <!--http://bootsnipp.com/snippets/featured/custom-search-input-->
+                    <div class="col-md-14">
+                        <form id="custom-search-input">
+                            <div class="input-group col-md-10">
+                                <input type="text" class="form-control input-md" placeholder="Search for Gavin Turek songs here" />
+                                <span class="input-group-btn">
+                        <button class="btn btn-info btn-md" type="button" onclick="customSearch()">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div id="medialeft">
+                </div>
+
+
+            </div>
+
+
+
+            <div class="center">
+                <h4 id="itunestitles">TOP ALBUMS...</h4>
+                <div id="mediacent"></div>
+
+            </div>
+            <div class="right">
+                <h4 id="itunestitles">TOP SONGS...</h4>
+                <div id="mediart"></div>
+
+
+
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+
+            <script>
+                $(document).ready(function () {
+                    itunesquery("term=gavin+turek&entity=album&limit=5", "mediacent");
+                    itunesquery("term=gavin+turek&entity=song&limit=5", "mediart");
+                });
+
+                // function customsearch() {
+
+                //     //get user input
+                //     //remove spaces and add pluses
+                //     //run function with those inputs
+
+
+                //     itunesquery(`term=${searchTerm}&limit=5`, "medialeft");
+
+                // }
+
+
+
+                document.onkeydown = function (e) { // JUST LISTENING FOR THE SPACEBAR CLICK
+                    if (e.keyCode == 13) {
+                        event.preventDefault();
+                        customSearch();
+                        console.log("test")
+                    }
+                };
+
+
+                function customSearch() {
+
+                    document.getElementById("medialeft").innerHTML = "<img src='https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif'>";       // LOADING
+                    let searchTerm = $('input').val();
+                    var form = document.getElementById("custom-search-input"); // clears the form after input text is written in.
+                    form.reset();
+                    console.log(searchTerm);
+                    searchTerm = searchTerm.replace(/[^0-9a-zA-Z]/g, '+'); // Replaces spaces with +s, to make the searchability better
+
+
+                    $.ajax({
+                        url: `https://itunes.apple.com/search?term=${searchTerm}&limit=5`,
+                        dataType: 'JSONP'
+                    })
+                        .done(function (data) {
+                            console.log(data);
+                            // code for when response from apple comes back.
+
+
+                            document.getElementById("medialeft").innerHTML = "";
+
+                            // ZERO SERACH RESULTS, CODE BELOW
+
+                            if (data.results.length === 0) {
+                                document.getElementById("medialeft").innerHTML = "<h3 id='error'>No Results Found</h3>";
+                            }
+
+
+                            for (let i = 0; i < data.results.length; i++) {
+
+                                // THIS PART BELOW IS PUTTING PROPERTIES OF THE TRACK IN THE EMPTY DIV
+
+                                $("#medialeft").append(`  
+                        <div class="medialeft">
+                            <div class="media-left">
+                                <a href="#">
+                                <img class="media-object" src="${data.results[i].artworkUrl100}" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">${data.results[i].trackName}
+                                </h4>
+                                <p>${data.results[i].trackName}</p>
+                                <p>${data.results[i].collectionPrice}</p>          
+                            </div>
+                            </div>    
+                    `)
+                            }
+
+                        })
+                        .fail(function (data) {
+                            console.log(data);
+                            // code for when the data fails to come back.
+                            document.getElementById("medialeft").innerHTML = "<h3>Sorry! Couldn't load data.</h3>";       // LOADING
+
+                        })
+                };// End of on ready part
+
+
+                function itunesquery(querystring, location) {
+
+                    $.ajax({
+                        url: `https://itunes.apple.com/search?${querystring}`, // HAVE TO USE TICKS and NOT quotations here for it to work!
+                        dataType: 'JSONP'
+                    })
+                        .done(function (data) {
+                            console.log(data);
+
+                            for (let i = 0; i < data.results.length; i++) {
+
+                                // THIS PART BELOW IS PUTTING PROPERTIES OF THE TRACK IN THE EMPTY DIV
+
+                                $("#" + location).append(`  
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                <img class="media-object" src="${data.results[i].artworkUrl100}" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">${data.results[i].trackName}
+                                </h4>
+                                <p>${data.results[i].trackName}</p>
+                                <p>${data.results[i].collectionPrice}</p>          
+                            </div>
+                            </div>    
+                    `)
+                            }
+
+
+                        })
+                        .fail(function (data) {
+                            console.log(data);
+                            // code for when the data fails to come back.
+                            document.getElementById("media").innerHTML = "<h3>Sorry! Couldn't load data.</h3>";       // LOADING
+
+                        })
+                }
+            </script>
+
+        </div>
+
+
+
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa "
         crossorigin="anonymous "></script>
     <script>
-        $('.carousel').carousel()
+            $('.carousel').carousel()
     </script>
 </body>
 
